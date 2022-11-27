@@ -1,0 +1,5 @@
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        preferences.edit().putInt("test", 534).apply();
+        SharedPreferences постоянное хранилище данных, если один раз занесем, данные там останутся
+        int test = preferences.getInt("test", 0);
+        Toast.makeText(this, " " + test, Toast.LENGTH_SHORT).show();
